@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>CLB Bơi lội</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:linear-gradient(135deg,#1e3a8a,#8B5A2B);
+text-align:center;
+}
+
+.menu{
+background:white;
+padding:15px;
+}
+
+.menu a{
+margin:20px;
+text-decoration:none;
+color:#1e3a8a;
+font-weight:bold;
+}
+
+/* icon mạng xã hội */
+.social{
+    display:flex;
+    gap:20px;
+    padding:30px;
+	
+}
+
+.icon{
+    width:45px;
+    height:45px;
+    background:white;
+    color:#0a0f5a;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+	}
+
+.card{
+background:white;
+width:320px;
+margin:80px auto;
+padding:30px;
+border-radius:15px;
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+img{
+width:350px;
+border-radius:50%;
+}
+/* footer */
+
+footer{
+background:#1e3a8a;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* tiêu đề */
+.title{
+position:absolute;
+top:40%;
+width:100%;
+text-align:center;
+color:white;
+font-size:50px;
+letter-spacing:5px;
+}
+
+/* sao nhỏ */
+.star{
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+0%{opacity:0.2}
+50%{opacity:1}
+100%{opacity:0.2}
+}
+
+/* sao băng */
+.shooting-star{
+position:absolute;
+height:2px;
+width:120px;
+background:linear-gradient(-45deg,white,rgba(255,255,255,0));
+border-radius:999px;
+animation:shoot 5s linear infinite;
+}
+
+@keyframes shoot{
+0%{
+transform:translateX(-200px) translateY(-200px) rotate(45deg);
+opacity:1;
+}
+100%{
+transform:translateX(1200px) translateY(800px) rotate(45deg);
+opacity:0;
+}
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+    <div class="menu">
+<a href="index.html">Trang chủ</a>
+<a href="clb bơi lội.html">CLB Bơi lội</a>
+<a href="clb nghệ thuật.html">CLB Nghệ thuật</a>
+</div>
+
+
+
+<h1 style="color:tomato;">Câu lạc bộ Bơi lội</h1>
+
+    <p>CLB Bơi lội giúp học sinh rèn luyện sức khỏe, nâng cao kĩ năng bơi và tăng cường tinh thần kỉ luật .</p>
+
+    <h2 style="color:#89cff0;">Hình ảnh hoạt động</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxtL0Js2PCUpZiqFl2vaqnMrR8MXuGe30jsA&s" alt="Hoạt động bơi lội"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQqdNnAXVm9zKGTu60Isx7fz0h2xHa3MLLhw&s" >
+    <h2 style="color:lightcoral;">Danh sách thành viên</h2>
+
+<div class="card">
+
+<h2 style="color:maroon;">Đỗ Quang Ngọc</h2>
+
+<p><b>Giới tính:</b> Nam</p>
+
+<p><b>Sở thích:</b></p>
+<p>🏊🏻Bơi tự do</p>
+<p>☀️Tập thể lực</p>
+
+</div>
+
+<div class="card">
+<h2 style="color:maroon;">Hồ Vĩ Cường</h2>
+
+<p><b>Giới tính:</b> Nam</p>
+
+<p><b>Sở thích:</b></p>
+<p>🏊🏻Bơi ếch </p>
+<p>🌧Luyện kĩ thuật xuất phát</p>
+
+</div>
+
+<div class="card">
+<h2 style="color:maroon;">Ngô Phước Huyền Trang</h2>
+
+<p><b>Giới tính:</b> Nữ</p>
+
+<p><b>Sở thích:</b></p>
+<p>🏊🏻Bơi ngửa </p>
+<p>⛄Rèn sức bền</p>
+
+</div>
+
+<div class="card">
+<h2 style="color:maroon;">Trần Thị Thảo Vy</h2>
+
+<p><b>Giới tính:</b> Nữ</p>
+
+<p><b>Sở thích:</b></p>
+<p>🏊🏻Bơi bướm </p>
+<p>☘️ Cải thiện tốc độ</p>
+
+</div>
+
+<div class="card">
+<h2 style="color:maroon;">Trần Thị Thanh Tiên</h2>
+
+<p><b>Giới tính:</b> Nữ</p>
+
+<p><b>Sở thích:</b></p>
+<p>🏊🏻Bơi sải </p>
+<p>💦Tham gia thi đấu </p>
+
+</div>
+</div>
+
+
+<script>
+
+/* tạo sao */
+for(let i=0;i<150;i++){
+let star=document.createElement("div")
+star.className="star"
+star.style.top=Math.random()*100+"%"
+star.style.left=Math.random()*100+"%"
+star.style.animationDuration=(Math.random()*3+2)+"s"
+document.body.appendChild(star)
+}
+
+/* sao băng */
+function shootingStar(){
+let star=document.createElement("div")
+star.className="shooting-star"
+star.style.top=Math.random()*50+"%"
+star.style.left="-200px"
+document.body.appendChild(star)
+
+setTimeout(()=>{
+star.remove()
+},5000)
+}
+
+setInterval(shootingStar,3000)
+
+</script>
+
+<div class="social">
+<div class="icon"> ☁ </div>
+<div class="icon">✿</div>
+<div class="icon">☎</div>
+<div class="icon">☂</div>
+</div>
+<footer>
+© 2026 Trường TRUNG CẤP KINH TẾ KỸ THUẬT SỐ 2
+</footer>
+</body>
+</html>

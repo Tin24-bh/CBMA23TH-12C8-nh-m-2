@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Câu lạc bộ trường học</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(135deg,#1e3a8a,#8B5A2B);
+}
+/* icon mạng xã hội */
+.social{
+    display:flex;
+    gap:20px;
+    padding:30px;
+	
+}
+
+.icon{
+    width:45px;
+    height:45px;
+    background:white;
+    color:#0a0f5a;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+	}
+
+/* banner */
+
+.banner{
+position:relative;
+overflow:hidden;
+}
+
+.banner img{
+width:100%;
+height:350px;
+object-fit:cover;
+animation:zoom 10s infinite alternate;
+}
+
+@keyframes zoom{
+from{transform:scale(1);}
+to{transform:scale(1.1);}
+}
+
+.banner h1{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
+font-size:40px;
+background:rgba(0,0,0,0.5);
+padding:15px 30px;
+border-radius:10px;
+}
+
+/* menu */
+
+.menu{
+background:white;
+padding:15px;
+display:flex;
+justify-content:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.menu a{
+margin:0 25px;
+text-decoration:none;
+color:#1e3a8a;
+font-weight:bold;
+padding:8px 15px;
+border-radius:6px;
+transition:0.3s;
+}
+
+.menu a:hover{
+background:#1e3a8a;
+color:white;
+transform:scale(1.1);
+}
+
+/* container */
+
+.container{
+width:900px;
+margin:auto;
+padding:40px 0;
+}
+
+/* card */
+
+.clb{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:30px;
+background:white;
+padding:25px;
+margin-bottom:35px;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+transition:0.4s;
+}
+
+.clb:hover{
+transform:translateY(-10px);
+}
+
+.clb img{
+width:100%;
+border-radius:10px;
+transition:0.4s;
+}
+
+.clb img:hover{
+transform:scale(1.05);
+}
+
+.text h2{
+color:#8B5A2B;
+}
+
+.text p{
+line-height:1.6;
+color:#444;
+}
+
+/* footer */
+
+footer{
+background:#1e3a8a;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+
+/* tiêu đề */
+.title{
+position:absolute;
+top:40%;
+width:100%;
+text-align:center;
+color:white;
+font-size:50px;
+letter-spacing:5px;
+}
+
+/* sao nhỏ */
+.star{
+position:absolute;
+width:2px;
+height:2px;
+background:white;
+border-radius:50%;
+animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+0%{opacity:0.2}
+50%{opacity:1}
+100%{opacity:0.2}
+}
+
+/* sao băng */
+.shooting-star{
+position:absolute;
+height:2px;
+width:120px;
+background:linear-gradient(-45deg,white,rgba(255,255,255,0));
+border-radius:999px;
+animation:shoot 5s linear infinite;
+}
+
+@keyframes shoot{
+0%{
+transform:translateX(-200px) translateY(-200px) rotate(45deg);
+opacity:1;
+}
+100%{
+transform:translateX(1200px) translateY(800px) rotate(45deg);
+opacity:0;
+}
+}
+
+/* icon bay ngang */
+.icon-run{
+position:fixed;
+font-size:40px;
+left:-100px;
+animation:runIcon linear infinite;
+}
+
+@keyframes runIcon{
+0%{left:-100px;}
+100%{left:110%;}
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+<img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b">
+<h1 style="text-align:center;">Câu lạc bộ ngoại khóa 
+Trường Trung Cấp Kinh Tế Kĩ Thuật Số 2</h1>
+
+</div>
+
+<div class="menu">
+<a href="index.html">Trang chủ</a>
+<a href="clb bơi lội.html"> CLB Bơi lội</a>
+<a href="clb nghệ thuật.html">CLB Nghệ thuật</a>
+</div>
+
+<div class="container">
+
+<div class="clb">
+<div class="text">
+<h2> Giới thiệu trường</h2>
+<p>
+Trường Trung Cấp Kinh Tế Kỹ Thuật Số 2 là môi trường học tập năng động, đào tạo học sinh có kiến thức chuyên môn và kỹ năng nghề nghiệp vững vàng. Nhà trường luôn tạo điều kiện tốt để học sinh học tập, rèn luyện và phát triển trong tương lai.
+</p>
+</div>
+
+<img src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/486843752_638026282348346_905640457795629667_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=25d718&_nc_ohc=5Lf4CBH7eD4Q7kNvwGV9YJz&_nc_oc=AdmdGxCRUYczGRRr6_Rzak9z1GLRogmzkEwi5T_V5uqiTDYSqClvWJJJlDHqV5BXgzU&_nc_zt=23&_nc_ht=scontent.fsgn2-7.fna&_nc_gid=RpANfGPrwxeC90yRtPuefA&_nc_ss=8&oh=00_AfwqeebJzH6gZuvi3KRXYe8c82-RV_CskoUXhYPIYfTMoA&oe=69B24996" width="350">
+
+</div>
+
+<div class="clb">
+
+<img src="https://media.istockphoto.com/id/1147383283/vi/anh/nh%E1%BB%AFng-ng%C6%B0%E1%BB%9Di-b%C6%A1i-l%E1%BB%99i-trong-m%E1%BB%99t-cu%E1%BB%99c-thi-b%C6%A1i-l%E1%BB%99i.jpg?s=1024x1024&w=is&k=20&c=xhNHZvxaBCzyEJfzlFpcf2NjHrTav0OzUGv8zqS-ktY=">
+
+<div class="text">
+<h2>CLB Bơi lội</h2>
+<p>
+Rèn luyện sức khỏe với các hoạt động thế chất dưới nước
+</p>
+<a href="clb bơi lội.html"> xem thêm</a>
+</div>
+
+</div>
+
+<div class="clb">
+
+<div class="text">
+<h2>CLB Nghệ thuật</h2>
+<p>
+Dành cho các bạn yêu thích âm nhạc,
+hội họa và sáng tạo nghệ thuật.
+</p>
+</div>
+
+<img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76">
+<a href="clb nghệ thuật.html">xem thêm</a>
+</div>
+
+</div>
+
+<!-- icon bay -->
+<div class="icon-run" style="top:70%;animation-duration:10s;">🪐</div>
+<div class="icon-run" style="top:70%;animation-duration:12s;">🚀</div>
+<div class="icon-run" style="top:80%;animation-duration:14s;">🛸</div>
+<div class="icon-run" style="top:60%;animation-duration:16s;">☄️</div>
+<div class="icon-run" style="top:70%;animation-duration:18s;">🛰️</div>
+<div class="icon-run" style="top:70%;animation-duration:20s;">🌎</div>
+<script>
+
+/* tạo sao */
+for(let i=0;i<150;i++){
+let star=document.createElement("div")
+star.className="star"
+star.style.top=Math.random()*100+"%"
+star.style.left=Math.random()*100+"%"
+star.style.animationDuration=(Math.random()*3+2)+"s"
+document.body.appendChild(star)
+}
+
+/* sao băng */
+function shootingStar(){
+let star=document.createElement("div")
+star.className="shooting-star"
+star.style.top=Math.random()*50+"%"
+star.style.left="-200px"
+document.body.appendChild(star)
+
+setTimeout(()=>{
+star.remove()
+},5000)
+}
+
+setInterval(shootingStar,3000)
+
+</script>
+
+
+<div class="social">
+<div class="icon"> ☁ </div>
+<div class="icon">✿</div>
+<div class="icon">☎</div>
+<div class="icon">☂</div>
+</div>
+<footer>
+© 2026 Trường TRUNG CẤP KINH TẾ KỸ THUẬT SỐ 2
+</footer>
+
+</body>
+</html>
